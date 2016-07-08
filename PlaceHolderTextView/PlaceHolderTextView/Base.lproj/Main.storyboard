@@ -16,11 +16,54 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="g93-Lg-9LR" customClass="PlaceHolderTextView" customModule="PlaceHolderTextView" customModuleProvider="target">
+                                <rect key="frame" x="10" y="20" width="580" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="LP0-s8-ozJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d3p-BH-NIv" customClass="PlaceHolderTextView" customModule="PlaceHolderTextView" customModuleProvider="target">
+                                <rect key="frame" x="10" y="230" width="580" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1ut-m1-vov"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.59477244129999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="g93-Lg-9LR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="OKv-Jh-dS7"/>
+                            <constraint firstItem="g93-Lg-9LR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Ucu-EF-fRm"/>
+                            <constraint firstAttribute="trailing" secondItem="g93-Lg-9LR" secondAttribute="trailing" constant="10" id="Wm6-52-AIn"/>
+                            <constraint firstItem="d3p-BH-NIv" firstAttribute="top" secondItem="g93-Lg-9LR" secondAttribute="bottom" constant="10" id="gH9-kX-IZh"/>
+                            <constraint firstItem="d3p-BH-NIv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="xjn-u2-xr4"/>
+                            <constraint firstAttribute="trailing" secondItem="d3p-BH-NIv" secondAttribute="trailing" constant="10" id="zbE-hj-itZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textViewA" destination="g93-Lg-9LR" id="XDy-iR-ESx"/>
+                        <outlet property="textViewB" destination="d3p-BH-NIv" id="Sia-VE-BAQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="260" y="389"/>
         </scene>
     </scenes>
 </document>
