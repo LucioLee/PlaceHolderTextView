@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         attrStr.addAttribute(NSUnderlineStyleAttributeName, value: 1, range: NSRange(location: 0, length: attrStr.length))
         attrStr.addAttribute(NSUnderlineColorAttributeName, value: UIColor.greenColor(), range: NSRange(location: 0, length: attrStr.length))
         attrStr.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(18), range: NSRange(location: 0, length: 1))
+        
+        attrStr.
         textViewB.attributedPlaceHolder = attrStr
     }
 
