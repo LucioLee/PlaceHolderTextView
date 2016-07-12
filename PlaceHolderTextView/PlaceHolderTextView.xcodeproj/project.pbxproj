@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C633435B1D34C85800CFF0C2 /* Simulator Screen Shot 2016年7月12日 14.39.45.png in Resources */ = {isa = PBXBuildFile; fileRef = C633435A1D34C85800CFF0C2 /* Simulator Screen Shot 2016年7月12日 14.39.45.png */; };
 		C6803DB31D2F5C3900757792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6803DB21D2F5C3900757792 /* AppDelegate.swift */; };
 		C6803DB51D2F5C3900757792 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6803DB41D2F5C3900757792 /* ViewController.swift */; };
 		C6803DB81D2F5C3900757792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6803DB61D2F5C3900757792 /* Main.storyboard */; };
@@ -17,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C633435A1D34C85800CFF0C2 /* Simulator Screen Shot 2016年7月12日 14.39.45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot 2016年7月12日 14.39.45.png"; sourceTree = "<group>"; };
 		C6803DAF1D2F5C3900757792 /* PlaceHolderTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaceHolderTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6803DB21D2F5C3900757792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6803DB41D2F5C3900757792 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 				C6803DC41D2F5C5C00757792 /* PlaceHolderTextView.swift */,
 				C6803DB21D2F5C3900757792 /* AppDelegate.swift */,
 				C6803DB41D2F5C3900757792 /* ViewController.swift */,
-				C633435A1D34C85800CFF0C2 /* Simulator Screen Shot 2016年7月12日 14.39.45.png */,
 				C6803DB61D2F5C3900757792 /* Main.storyboard */,
 				C6803DB91D2F5C3900757792 /* Assets.xcassets */,
 				C6803DBB1D2F5C3900757792 /* LaunchScreen.storyboard */,
@@ -128,7 +125,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C633435B1D34C85800CFF0C2 /* Simulator Screen Shot 2016年7月12日 14.39.45.png in Resources */,
 				C6803DBD1D2F5C3900757792 /* LaunchScreen.storyboard in Resources */,
 				C6803DBA1D2F5C3900757792 /* Assets.xcassets in Resources */,
 				C6803DB81D2F5C3900757792 /* Main.storyboard in Resources */,
