@@ -15,10 +15,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let str = "请留下您的宝贵意见....请留下您的宝贵意见....请留下您的宝贵意见....请留下您的宝贵意见....请留下您的宝贵意见...."
+        let str = "请留下您的宝贵意见...."
         
         textViewA.placeHolder = str
         textViewA.font = UIFont.systemFontOfSize(18)
+        
+        let textView = PlaceHolderTextView()
+        textView.placeHolder = "请留下您的宝贵意见...."
         
         let attrStr = NSMutableAttributedString(string: str)
         attrStr.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: NSRange(location: 0, length: attrStr.length))
@@ -26,7 +29,6 @@ class ViewController: UIViewController {
         attrStr.addAttribute(NSUnderlineColorAttributeName, value: UIColor.greenColor(), range: NSRange(location: 0, length: attrStr.length))
         attrStr.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(18), range: NSRange(location: 0, length: 1))
         
-        attrStr.
         textViewB.attributedPlaceHolder = attrStr
     }
 
