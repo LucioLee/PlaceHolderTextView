@@ -8,29 +8,29 @@
 
 import UIKit
 
-public class PlaceHolderTextView: UITextView {
+open class PlaceHolderTextView: UITextView {
     
-    private var _placeHolderLabel: UILabel!
+    fileprivate var _placeHolderLabel: UILabel!
     
-    public var attributedPlaceHolder: NSAttributedString? = nil {
+    open var attributedPlaceHolder: NSAttributedString? = nil {
         didSet {
             _placeHolderLabel.attributedText = attributedPlaceHolder
             setNeedsDisplay()
         }
     }
-    public var placeHolder: String? = nil {
+    open var placeHolder: String? = nil {
         didSet {
             _placeHolderLabel.text = placeHolder
             setNeedsDisplay()
         }
     }
-    override public var text: String! {
+    override open var text: String! {
         didSet {
             textDidChange()
         }
     }
     
-    override public var font: UIFont? {
+    override open var font: UIFont? {
         didSet {
             if _placeHolderLabel != nil {
                 _placeHolderLabel.font = font
@@ -38,7 +38,7 @@ public class PlaceHolderTextView: UITextView {
         }
     }
     
-    override public func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         let size =  _placeHolderLabel.sizeThatFits(CGSize(width: bounds.width - 10 ,height: CGFloat(MAXFLOAT)))
         _placeHolderLabel.frame = CGRect(origin: CGPoint(x: 5,y: 5), size: size)
@@ -56,21 +56,21 @@ public class PlaceHolderTextView: UITextView {
         textDidChange()
     }
     
-    private func addPlaceHolderLabel() {
+    fileprivate func addPlaceHolderLabel() {
         _placeHolderLabel = UILabel()
         _placeHolderLabel.numberOfLines = 0
-        _placeHolderLabel.font = self.font ?? UIFont.systemFontOfSize(16)
-        _placeHolderLabel.textColor = UIColor.lightGrayColor()
-        _placeHolderLabel.backgroundColor = UIColor.clearColor()
+        _placeHolderLabel.font = self.font ?? UIFont.systemFont(ofSize: 16)
+        _placeHolderLabel.textColor = UIColor.lightGray
+        _placeHolderLabel.backgroundColor = UIColor.clear
         addSubview(_placeHolderLabel)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PlaceHolderTextView.textDidChange), name: UITextViewTextDidChangeNotification, object: self)
+        NotificationCenter.default.addObserver(self, selector: #selector(PlaceHolderTextView.textDidChange), name: NSNotification.Name.UITextViewTextDidChange, object: self)
     }
     
     final func textDidChange() {
-        _placeHolderLabel.hidden = text.isEmpty ? false : true
+        _placeHolderLabel.isHidden = text.isEmpty ? false : true
     }
     
     deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+        NotificationCenter.default.removeObserver(self)
     }
 }

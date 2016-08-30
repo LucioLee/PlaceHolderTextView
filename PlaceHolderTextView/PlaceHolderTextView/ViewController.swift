@@ -18,16 +18,16 @@ class ViewController: UIViewController {
         let str = "请留下您的宝贵意见...."
         
         textViewA.placeHolder = str
-        textViewA.font = UIFont.systemFontOfSize(18)
+        textViewA.font = UIFont.systemFont(ofSize: 18)
         
         let textView = PlaceHolderTextView()
         textView.placeHolder = "请留下您的宝贵意见...."
         
         let attrStr = NSMutableAttributedString(string: str)
-        attrStr.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: NSRange(location: 0, length: attrStr.length))
+        attrStr.addAttribute(NSForegroundColorAttributeName, value: UIColor.red, range: NSRange(location: 0, length: attrStr.length))
         attrStr.addAttribute(NSUnderlineStyleAttributeName, value: 1, range: NSRange(location: 0, length: attrStr.length))
-        attrStr.addAttribute(NSUnderlineColorAttributeName, value: UIColor.greenColor(), range: NSRange(location: 0, length: attrStr.length))
-        attrStr.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(18), range: NSRange(location: 0, length: 1))
+        attrStr.addAttribute(NSUnderlineColorAttributeName, value: UIColor.green, range: NSRange(location: 0, length: attrStr.length))
+        attrStr.addAttribute(NSFontAttributeName, value: UIFont.systemFont(ofSize: 18), range: NSRange(location: 0, length: 1))
         
         textViewB.attributedPlaceHolder = attrStr
     }
