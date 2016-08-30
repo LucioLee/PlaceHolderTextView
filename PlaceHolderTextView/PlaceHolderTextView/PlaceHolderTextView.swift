@@ -44,7 +44,6 @@ public class PlaceHolderTextView: UITextView {
         _placeHolderLabel.frame = CGRect(origin: CGPoint(x: 5,y: 5), size: size)
     }
     
-    
     override public init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
         addPlaceHolderLabel()
