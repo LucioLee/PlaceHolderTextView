@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					C6803DAE1D2F5C3900757792 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 23LY92RARE;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -259,7 +260,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 23LY92RARE;
 				INFOPLIST_FILE = PlaceHolderTextView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Personal.PlaceHolderTextView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -271,7 +274,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 23LY92RARE;
 				INFOPLIST_FILE = PlaceHolderTextView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Personal.PlaceHolderTextView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
